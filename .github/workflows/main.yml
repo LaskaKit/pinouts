@@ -38,3 +38,25 @@ jobs:
         name: generated-image
         path: esp32_lpkit/diagram.svg
         retention-days: 30  # Keep artifact for 30 days
+
+    - name: Create Release
+      if: startsWith(github.ref, 'refs/tags/')  # Only create release for tags
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          esp32_lpkit/diagram.svg
+        name: Release ${{ github.ref_name }}
+        body: |
+          ## Generated Image Release
+          
+          This release contains the automatically generated image from the Python script.
+          
+          ### Changes
+          - Generated diagram.svg from latest script version
+          
+        generate_release_notes: true
+        draft: false
+        prerelease: false
+        make_latest: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
