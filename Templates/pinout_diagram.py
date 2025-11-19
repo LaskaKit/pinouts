@@ -15,7 +15,7 @@ from pinout.components.legend import Legend
 
 # Import data for the diagram
 import data
-from Templates.data import brdImgName
+from data import brdImgName
 
 # Read image data UNUSED - READING IMAGE DATA UNNECESSARY.
 # img = cv2.imread(brdImgName)
@@ -89,3 +89,4 @@ diagram.add(legend)
 
 with open("diagram.svg", "w") as f:
     f.write(diagram.render())
+
