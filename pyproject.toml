@@ -1,0 +1,13 @@
+[project]
+name = "pinouts"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cairosvg>=2.8.2",
+    "jinja2>=3.1.6",
+    "jsonschema>=4.25.1",
+    "markupsafe>=3.0.3",
+    "setuptools>=80.9.0",
+]

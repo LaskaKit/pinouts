@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pinout",
+  "description": "Pinout schema diagram for MCU",
+  "type": "object",
+  "properties": {
+    "height": {
+      "description": "The diagram height in pixels.",
+      "type": "integer"
+    },
+    "width": {
+      "description": "The diagram width in pixels.",
+      "type": "integer"
+    },
+    "image": {
+      "description": "The rendered image of a board.",
+      "type": "string"
+    },
+    "pin_label_groups": {
+      "description": "A list of pin label groups.",
+      "type": "array",
+      "items": {
+        "description": "A pin label group.",
+        "type": "object",
+        "properties": {
+          "pin_start": {
+            "$ref": "#/$defs/vec2d"
+          },
+          "pin_pitch": {
+            "$ref": "#/$defs/vec2d"
+          },
+          "label_start": {
+            "$ref": "#/$defs/vec2d"
+          },
+          "label_pitch": {
+            "$ref": "#/$defs/vec2d"
+          },
+          "scale": {
+            "$ref": "#/$defs/vec2d"
+          },
+          "pin_label_rows": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "tag": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "pin_start",
+          "pin_pitch",
+          "label_start",
+          "label_pitch",
+          "pin_label_rows"
+        ]
+      }
+    }
+  },
+  "required": ["height", "width", "image"],
+  "$defs": {
+    "vec2d": {
+      "type": "object",
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" }
+      },
+      "required": ["x", "y"]
+    }
+  }
+}

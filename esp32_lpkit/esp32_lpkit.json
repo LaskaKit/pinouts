@@ -1,0 +1,113 @@
+{
+  "height": 800,
+  "width": 1200,
+  "image": "esp32_lpkit/esp32_lpkit.png",
+  "pin_label_groups": [
+    {
+      "pin_start": { "x": 10, "y": 81 },
+      "pin_pitch": { "x": 0, "y": 23.4 },
+      "label_start": { "x": 20, "y": 0 },
+      "label_pitch": { "x": 0, "y": 23.4 },
+      "scale": { "x": -1, "y": 1 },
+      "pin_label_rows": [
+        [{ "name": "3V3", "tag": "pwr" }],
+        [{ "name": "EN", "tag": "pwr" }],
+        [
+          { "name": "GP36", "tag": "gpio" },
+          { "name": "ADC1_0", "tag": "analog" },
+          { "name": "RTC_IO0", "tag": "rtc" },
+          { "name": "SENSOR_VP", "tag": "other" },
+          { "name": "INPUT ONLY", "tag": "other" }
+        ],
+        [
+          { "name": "GP39", "tag": "gpio" },
+          { "name": "ADC1_3", "tag": "analog" },
+          { "name": "RTC_IO3", "tag": "rtc" },
+          { "name": "SENSOR_VN", "tag": "other" },
+          { "name": "INPUT ONLY", "tag": "other" }
+        ],
+        [
+          { "name": "GP34", "tag": "gpio" },
+          { "name": "ADC1_6", "tag": "analog" },
+          { "name": "RTC_IO4", "tag": "rtc" },
+          { "name": "INPUT ONLY", "tag": "other" }
+        ],
+        [
+          { "name": "GP35", "tag": "gpio" },
+          { "name": "ADC1_7", "tag": "analog" },
+          { "name": "RTC_IO5", "tag": "rtc" },
+          { "name": "INPUT ONLY", "tag": "other" }
+        ],
+        [
+          { "name": "GP32", "tag": "gpio" },
+          { "name": "ADC1_4", "tag": "analog" },
+          { "name": "RTC_IO9", "tag": "rtc" },
+          { "name": "Touch9", "tag": "other" },
+          { "name": "XTAL_32_P", "tag": "other" }
+        ],
+        [
+          { "name": "GP33", "tag": "gpio" },
+          { "name": "ADC1_5", "tag": "analog" },
+          { "name": "RTC_IO8", "tag": "rtc" },
+          { "name": "Touch8", "tag": "other" },
+          { "name": "XTAL_32_N", "tag": "other" }
+        ],
+        [
+          { "name": "GP25", "tag": "gpio" },
+          { "name": "ADC2_8", "tag": "analog" },
+          { "name": "RTC_IO6", "tag": "rtc" },
+          { "name": "DAC1", "tag": "other" }
+        ],
+        [
+          { "name": "GP26", "tag": "gpio" },
+          { "name": "ADC2_9", "tag": "analog" },
+          { "name": "RTC_IO7", "tag": "rtc" },
+          { "name": "DAC2", "tag": "other" }
+        ],
+        [
+          { "name": "GP27", "tag": "gpio" },
+          { "name": "ADC2_7", "tag": "analog" },
+          { "name": "RTC_IO17", "tag": "rtc" },
+          { "name": "Touch7", "tag": "other" }
+        ],
+        [
+          { "name": "GP14", "tag": "gpio" },
+          { "name": "ADC2_6", "tag": "analog" },
+          { "name": "RTC_IO16", "tag": "rtc" },
+          { "name": "Touch6", "tag": "other" },
+          { "name": "HSPI_CLK", "tag": "spi" }
+        ],
+        [
+          { "name": "GP12", "tag": "gpio" },
+          { "name": "ADC2_5", "tag": "analog" },
+          { "name": "RTC_IO15", "tag": "rtc" },
+          { "name": "Touch5", "tag": "other" },
+          { "name": "HSPI_MISO", "tag": "spi" }
+        ],
+        [{ "name": "GND", "tag": "gnd" }],
+        [
+          { "name": "GP13", "tag": "gpio" },
+          { "name": "ADC2_4", "tag": "analog" },
+          { "name": "RTC_IO14", "tag": "rtc" },
+          { "name": "Touch4", "tag": "other" },
+          { "name": "HSPI_MOSI", "tag": "spi" }
+        ],
+        [{ "name": "VCC", "tag": "pwr" }]
+      ]
+    },
+    {
+      "pin_start": { "x": 221, "y": 81 },
+      "pin_pitch": { "x": 0, "y": 23.4 },
+      "label_start": { "x": 20, "y": 0 },
+      "label_pitch": { "x": 0, "y": 23.4 },
+      "scale": { "x": 1, "y": 1 },
+      "pin_label_rows": [
+        [{ "name": "GND", "tag": "gnd" }],
+        [
+          { "name": "GP32", "tag": "gpio" },
+          { "name": "VSPI_MOSI", "tag": "spi" }
+        ]
+      ]
+    }
+  ]
+}
