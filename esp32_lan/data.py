@@ -4,7 +4,7 @@ brdImgName = "esplan.png" #add name of board .png
 
 
 D_WIDTH = 1920 #resulting diagram width
-D_HEIGHT = 1080 #resulting diagram height
+D_HEIGHT = 1200 #resulting diagram height
 
 
 #Hardware coordinates, add your hardware in the format ("name", x, y)
@@ -123,13 +123,27 @@ def linear_search(data, target):
     return None
 
 
-#content, x, y, tag, scale, body, leaderline
-#hwCoordiantes =[("3v3", 10, 81), ("3v3", 10, 81), ("gnd", 221, 79), ("pin_pitch_v", 0, 23), ("pin_pitch_h", 30, 0), ("usb_power", 112, 610), ("usup", 0, 476), ("bat", 230, 485)]
-#linear_search(hwCoordiantes, "usb_power")
+#content
+#x
+#y
+#tag
+#scale
+#body
+#leaderline
+
 graphicPinLabels = [("USB-POWER", linear_search(hwCoordiantes, "usb_power")[1], linear_search(hwCoordiantes, "usb_power")[2], "pwr", (1, 1), {"x": 100, "y": 30, "width": 100, "height": 30}, {"direction": "vh"}),
-                    ("uSup i2c", linear_search(hwCoordiantes, "usup")[1], linear_search(hwCoordiantes, "usup")[2], "i2c", (-1,1), {"x": 30, "y": 0, "width": 100, "height": 30}, None),
+                    ("uSup i2c", linear_search(hwCoordiantes, "usup")[1], linear_search(hwCoordiantes, "usup")[2], "i2c", (-1,1), {"x": 100, "y": -30, "width": 100, "height": 30}, None),
     ]
-graphicPinLabelGroups = [(linear_search(hwCoordiantes, "3v3")[1], linear_search(hwCoordiantes, "3v3")[2], linear_search(hwCoordiantes, "pin_pitch_v"),(30, 0), (0, 23), (-1, 1), header, {"height": 20, "width": 100})
+
+#x, y: HW coordinates
+#pin_pitch - space between pins
+#label_start
+#label_pitch
+#scale - move this first one to change start of labels
+#labels
+#body
+
+graphicPinLabelGroups = [(linear_search(hwCoordiantes, "3v3")[1], linear_search(hwCoordiantes, "3v3")[2], linear_search(hwCoordiantes, "pin_pitch_v"),(30, 40), (0, 23), (-1, 0.9), header, {"height": 20, "width": 100})
                          ]
 
 
