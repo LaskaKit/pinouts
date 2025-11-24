@@ -1,1 +1,0 @@
-Cílem této větve je vytvořit pinout_diagram.py který nebude muset být editová pro každý jenotlivý devkit.
