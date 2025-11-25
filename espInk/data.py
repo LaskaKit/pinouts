@@ -1,4 +1,6 @@
 #Names
+from sndhdr import whathdr
+
 brdName = "ESPink" #add board name here
 brdImgName = "ESPink.png" #add name of board .png
 
@@ -17,17 +19,35 @@ hgt_shift = 32 * 4 #image.y
 title = "<tspan class='title strong'>LaskaKit ESP32-LPKit</tspan> <tspan class='title'>Pinout</tspan>"
 
 legend = [
-    ("Analog", "analog"),
-    ("Other", "other"),
-    ("Ground", "gnd"),
-    ("GPIO", "gpio"),
-    ("Power", "pwr"),
-    ("RTC", "rtc"),
-    ("I2C", "i2c"),
-    ("SPI", "spi"),
-    ("UART", "uart"),
+    ("Analog   ", "analog"),
+    ("Other    ", "other"),
+    ("Ground   ", "gnd"),
+    ("GPIO     ", "gpio"),
+    ("Power    ", "pwr"),
+    ("RTC      ", "rtc"),
+    ("I2C      ", "i2c"),
+    ("SPI      ", "spi"),
+    ("UART     ", "uart"),
 ]
 
+legendSPI = [
+    ("CS - 46  ", "rtc"),
+    ("MOSI - 3 ", "mosi"),
+    ("SCK - 14 ", "scl"),
+    ("MISO - 21", "sda"),
+    ("3.3V - 47", "pwr"),
+    ("GND", "gnd")
+]
+
+legendI2C = [
+    ("GND", "gnd"),
+    ("3.3V - 47", "pwr"),
+    ("SDA - 42", "sda"),
+    ("SCL - 2 ", "scl")
+]
+
+legendList = [legendI2C, legendSPI, legend]
+legendCoords = [(-390, 1080), (870, 520), (32-wid_shift, 32*8-hgt_shift)]
 
 
 # Pinlabels. Each pin is an array of touples, with each touple being in the format of (TEXT, appearance)
@@ -161,7 +181,8 @@ right_header = [
     [
         ("GP40", "gpio"),
         ("CLK OUT2", "other"),
-        ("MTDO", "other")
+        ("MTDO", "other"),
+        ("Pushbutton", "other")
     ],
     [
         ("GP39", "gpio"),
@@ -169,7 +190,8 @@ right_header = [
         ("MTDCK", "other")
     ],
     [
-        ("GP38", "gpio"),
+        ("If PSRAM = OFF", "pwr"),
+        ("GP35", "gpio"),
         ("FSPIPW", "other")
     ],
 ]
@@ -191,7 +213,7 @@ graphicPinLabels = [("USB-POWER", linear_search(hwCoordiantes, "usb_power")[1], 
                     ("μŠup i2c", linear_search(hwCoordiantes, "usup")[1], linear_search(hwCoordiantes, "usup")[2], "i2c", (-1,1), {"x": 100, "y": 0, "width": 200, "height": 40}, None),
                     ("Battery Connector", linear_search(hwCoordiantes, "bat")[1], linear_search(hwCoordiantes, "bat")[2], "pwr", (1, 1), {"x": 100, "y": 0, "width": 250, "height": 40}, None),
                     ("Display Connector", linear_search(hwCoordiantes, "disp")[1], linear_search(hwCoordiantes, "disp")[2], "other", (1, 1), {"x": 100, "y": 0, "width": 300, "height": 40}, None),
-                    ("μŠup SPI", linear_search(hwCoordiantes, "SPI")[1], linear_search(hwCoordiantes, "SPI")[2], "i2c", (1, 1), {"x": 100, "y": 0, "width": 300, "height": 40}, None)
+                    ("μŠup SPI", linear_search(hwCoordiantes, "SPI")[1], linear_search(hwCoordiantes, "SPI")[2], "spi", (1, 1), {"x": 100, "y": 0, "width": 210, "height": 40}, None)
 
     ]
 graphicPinLabelGroups = [(linear_search(hwCoordiantes, "gnd")[1], linear_search(hwCoordiantes, "gnd")[2], linear_search(hwCoordiantes, "pin_pitch_v"), (50, 0), (0, 50), (1, 1), right_header, {"height": 38, "width": 200}),

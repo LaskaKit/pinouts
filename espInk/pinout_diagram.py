@@ -87,11 +87,19 @@ config.legend["entry"]["swatch"]["height"] = 10
 
 
 # Create a legend
-legend = Legend(data.legend)
-legend.x = 32
-legend.y = 32 * 8
-legend.skewx = 200
-diagram.add(legend)
+#legend = Legend(data.legend)
+#legend.x = 32
+#legend.y = 32 * 8
+#legend.skewx = 200
+#diagram.add(legend)
+
+# Create legends
+
+for leg, loc in zip(data.legendList, data.legendCoords):
+    legend = Legend(leg)
+    legend.x = loc[0] + data.wid_shift
+    legend.y = loc[1] + data.hgt_shift
+    diagram.add(legend)
 
 
 
