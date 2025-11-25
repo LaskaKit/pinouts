@@ -188,10 +188,10 @@ hwCoordiantes =[("3v3", 50, 145), ("3v3", 10, 81), ("gnd", 560, 145), ("pin_pitc
 #hwCoordiantes =[("3v3", 10, 81), ("3v3", 10, 81), ("gnd", 221, 79), ("pin_pitch_v", 0, 23), ("pin_pitch_h", 30, 0), ("usb_power", 112, 610), ("usup", 0, 476), ("bat", 230, 485)]
 #linear_search(hwCoordiantes, "usb_power")
 graphicPinLabels = [("USB-POWER", linear_search(hwCoordiantes, "usb_power")[1], linear_search(hwCoordiantes, "usb_power")[2], "pwr", (1, 1), {"x": 0, "y": 200, "width": 200, "height": 40}, {"direction": "vh"}),
-                    ("uSup i2c", linear_search(hwCoordiantes, "usup")[1], linear_search(hwCoordiantes, "usup")[2], "i2c", (-1,1), {"x": 100, "y": 0, "width": 200, "height": 40}, None),
-                    ("battery connector", linear_search(hwCoordiantes, "bat")[1], linear_search(hwCoordiantes, "bat")[2], "pwr", (1, 1), {"x": 100, "y": 0, "width": 250, "height": 40}, None),
+                    ("μŠup i2c", linear_search(hwCoordiantes, "usup")[1], linear_search(hwCoordiantes, "usup")[2], "i2c", (-1,1), {"x": 100, "y": 0, "width": 200, "height": 40}, None),
+                    ("Battery Connector", linear_search(hwCoordiantes, "bat")[1], linear_search(hwCoordiantes, "bat")[2], "pwr", (1, 1), {"x": 100, "y": 0, "width": 250, "height": 40}, None),
                     ("Display Connector", linear_search(hwCoordiantes, "disp")[1], linear_search(hwCoordiantes, "disp")[2], "other", (1, 1), {"x": 100, "y": 0, "width": 300, "height": 40}, None),
-                    ("uSup SPI", linear_search(hwCoordiantes, "SPI")[1], linear_search(hwCoordiantes, "SPI")[2], "i2c", (1, 1), {"x": 100, "y": 0, "width": 300, "height": 40}, None)
+                    ("μŠup SPI", linear_search(hwCoordiantes, "SPI")[1], linear_search(hwCoordiantes, "SPI")[2], "i2c", (1, 1), {"x": 100, "y": 0, "width": 300, "height": 40}, None)
 
     ]
 graphicPinLabelGroups = [(linear_search(hwCoordiantes, "gnd")[1], linear_search(hwCoordiantes, "gnd")[2], linear_search(hwCoordiantes, "pin_pitch_v"), (50, 0), (0, 50), (1, 1), right_header, {"height": 38, "width": 200}),

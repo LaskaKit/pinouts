@@ -1,3 +1,8 @@
+:root {
+  --varMoveSwatch: -30px; /*Change this value to move swatch, var(--varMoveSwatch)*/
+  --varMovePinLabelText: -7px; /*Change this value to move pin label text, var(--varMovePinLabelText)*/
+}
+
 text {
     font-family: Verdana, Georgia, sans-serif;
     font-size: 24px;
@@ -14,6 +19,7 @@ text {
     fill: #fff;
     font-weight: bold;
     stroke-width: 0;
+    baseline-shift: var(--varMovePinLabelText);
     text-anchor: middle;
 }
 
@@ -27,6 +33,7 @@ text {
 .i2c .swatch__body {
     fill: rgb(0, 100, 173);
     font-size: 32px;
+    transform: translate(var(--varMoveSwatch),0px);
 }
 
 .pwr .pinlabel__body{
@@ -38,6 +45,7 @@ text {
 .pwr .swatch__body {
     fill: rgb(173, 0, 0);
     font-size: 24px;
+    transform: translate(var(--varMoveSwatch),0px);
 
 }
 .uart .pinlabel__body{
@@ -49,6 +57,7 @@ text {
 .uart .swatch__body {
     fill: rgb(182, 69, 176);
     font-size: 24px;
+    transform: translate(var(--varMoveSwatch),0px);
 }
 .gpio .pinlabel__body{
     fill: rgb(160, 133, 26);
@@ -59,6 +68,7 @@ text {
 .gpio .swatch__body {
     fill: rgb(160, 133, 26);
     font-size: 24px;
+    transform: translate(var(--varMoveSwatch),0px);
 }
 .analog .pinlabel__body{
     fill: rgb(32, 150, 165);
@@ -69,6 +79,7 @@ text {
 .analog .swatch__body {
     fill: rgb(32, 150, 165);
     font-size: 24px;
+    transform: translate(var(--varMoveSwatch),0px);
 }
 .gnd .pinlabel__body{
     fill: rgb(0, 0, 0);
@@ -79,6 +90,7 @@ text {
 .gnd .swatch__body {
     fill: rgb(0, 0, 0);
     font-size: 24px;
+    transform: translate(var(--varMoveSwatch),0px);
 }
 .spi .pinlabel__body{
     fill: rgb(151, 76, 23);
@@ -89,6 +101,7 @@ text {
 .spi .swatch__body {
     fill: rgb(151, 76, 23);
     font-size: 24px;
+    transform: translate(var(--varMoveSwatch),0px);
 }
 .touch .pinlabel__body{
     fill: rgb(230, 87, 10);
@@ -99,6 +112,7 @@ text {
 .touch .swatch__body {
     fill: rgb(230, 87, 10);
     font-size: 24px;
+    transform: translate(var(--varMoveSwatch),0px);
 }
 
 .rtc .pinlabel__body{
@@ -110,6 +124,7 @@ text {
 .rtc .swatch__body {
     fill: rgb(100, 200, 10);
     font-size: 24px;
+    transform: translate(-29px,0px);
 }
 
 .other .pinlabel__body{
@@ -120,7 +135,9 @@ text {
 }
 .other .swatch__body {
     fill: rgb(200, 200, 200);
-    font-size: 24px;
+    font-size: 40px;
+    transform: translate(var(--varMoveSwatch),0px);
+
 }
 
 .panel__inner {
