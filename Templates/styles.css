@@ -1,6 +1,6 @@
 :root {
-  --varMoveSwatch: -30px; /*Change this value to move swatch, var(--varMoveSwatch)*/
-  --varMovePinLabelText: -7px; /*Change this value to move pin label text, var(--varMovePinLabelText)*/
+  --varMoveSwatch: -0px; /*Change this value to move swatch, shouldn't be necessary, var(--varMoveSwatch)*/
+  --varMovePinLabelText: -20px; /*Change this value to move pin label text, var(--varMovePinLabelText)*/
 }
 
 text {
@@ -33,15 +33,16 @@ text {
 .i2c .swatch__body {
     fill: rgb(0, 100, 173);
     font-size: 32px;
-    text-align: left;
     transform: translate(var(--varMoveSwatch),0px);
 }
 
 .pwr .pinlabel__body{
     fill: rgb(173, 0, 0);
+    text-align: left;
 }
 .pwr .pinlabel__leader{
     stroke: rgb(173, 0, 0);
+    text-align: left;
 }
 .pwr .swatch__body {
     fill: rgb(173, 0, 0);
@@ -59,88 +60,95 @@ text {
 .uart .swatch__body {
     fill: rgb(182, 69, 176);
     font-size: 24px;
-    text-anchor: start;
     transform: translate(var(--varMoveSwatch),0px);
 }
 .gpio .pinlabel__body{
     fill: rgb(160, 133, 26);
+    text-align: left;
 }
 .gpio .pinlabel__leader{
     stroke: rgb(160, 133, 26);
+    text-align: left;
 }
 .gpio .swatch__body {
     fill: rgb(160, 133, 26);
     font-size: 24px;
-    text-anchor: start;
     transform: translate(var(--varMoveSwatch),0px);
 }
 .analog .pinlabel__body{
     fill: rgb(32, 150, 165);
+    text-align: left;
 }
 .analog .pinlabel__leader{
     stroke: rgb(32, 150, 165);
+    text-align: left;
 }
 .analog .swatch__body {
     fill: rgb(32, 150, 165);
     font-size: 24px;
-    text-anchor: start;
     transform: translate(var(--varMoveSwatch),0px);
 }
 .gnd .pinlabel__body{
     fill: rgb(0, 0, 0);
+    text-align: left;
 }
 .gnd .pinlabel__leader{
     stroke: rgb(0, 0, 0);
+    text-align: left;
 }
 .gnd .swatch__body {
     fill: rgb(0, 0, 0);
     font-size: 24px;
-    text-anchor: start;
     transform: translate(var(--varMoveSwatch),0px);
 }
 .spi .pinlabel__body{
-    fill: rgb(151, 76, 23);
+    fill: rgb(4, 128, 92);
+    text-align: left;
 }
 .spi .pinlabel__leader{
-    stroke: rgb(151, 76, 23);
+    stroke: rgb(4, 128, 92);
+    text-align: left;
 }
 .spi .swatch__body {
-    fill: rgb(151, 76, 23);
+    fill: rgb(4, 128, 92);
     font-size: 24px;
-    text-anchor: start;
     transform: translate(var(--varMoveSwatch),0px);
 }
 .touch .pinlabel__body{
     fill: rgb(230, 87, 10);
+    text-align: left;
 }
 .touch .pinlabel__leader{
     stroke: rgb(230, 87, 10);
+    text-align: left;
 }
 .touch .swatch__body {
     fill: rgb(230, 87, 10);
     font-size: 24px;
-    text-anchor: start;
     transform: translate(var(--varMoveSwatch),0px);
 }
 
 .rtc .pinlabel__body{
     fill: rgb(100, 200, 10);
+    text-align: left;
 }
 .rtc .pinlabel__leader{
     stroke: rgb(100, 200, 10);
+    text-align: left;
 }
 .rtc .swatch__body {
     fill: rgb(100, 200, 10);
     font-size: 24px;
-    text-anchor: start;
-    transform: translate(-29px,0px);
+    transform: translate(var(--varMoveSwatch),0px);
 }
 
 .other .pinlabel__body{
     fill: rgb(200, 200, 200);
+    text-align: left;
 }
 .other .pinlabel__leader{
     stroke: rgb(200, 200, 200);
+    text-align: left;
 }
 .other .swatch__body {
     fill: rgb(200, 200, 200);
@@ -158,7 +166,9 @@ text {
 
 .legendentry text {
     dominant-baseline: central;
-    text-anchor: middle;
+    text-anchor: left;
+    background: orange;
+    border-color: red
 }
 
 .title {
@@ -175,4 +185,20 @@ text {
 
 .panel--info .panel__inner{
     fill: #f4f4f4;
+}
+
+
+.scl .swatch__body {
+    fill: rgb(255, 255, 0);
+    transform: translate(var(--varMoveSwatch),0px);
+}
+
+.sda .swatch__body {
+    fill: rgb(0, 0, 255);
+    transform: translate(var(--varMoveSwatch),0px);
+}
+
+.mosi .swatch__body {
+    fill: rgb(255, 255, 255);
+    transform: translate(var(--varMoveSwatch),0px);
 }

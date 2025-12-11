@@ -5,14 +5,12 @@
 # features and convenience classes.
 #
 ###########################################
-import swatch
+
 from pinout.core import Group, Image
-from pinout import config
 from pinout.components.layout import Diagram
 from pinout.components.pinlabel import PinLabelGroup, PinLabel
 from pinout.components.text import TextBlock
-from pinout.components.legend import Legend, Swatch
-from pinout.config import legend
+from pinout.components.legend import Legend
 #import cv2
 
 # Import data for the diagram
@@ -41,7 +39,7 @@ graphic = diagram.add(Group())
 
 # Add and embed an image
 image = Image(data.brdImgName, embed=True)
-image.x = ((diagram.width - image.width) // 2) + 200 # center the image\
+image.x = (diagram.width - image.width) // 2  # center the image\
 image.y = 32 * 4
 hardware = graphic.add(image)
 
@@ -82,27 +80,12 @@ title.x = 16 * 3
 title.y = 32 * 3
 diagram.add(title)
 
-config.legend["entry"]["height"] = 40
-config.legend["entry"]["swatch"]["height"] = 10
-
 
 # Create a legend
-#legend = Legend(data.legend)
-#legend.x = 32
-#legend.y = 32 * 8
-#legend.skewx = 200
-#diagram.add(legend)
-
-# Create legends
-
-for leg, loc in zip(data.legendList, data.legendCoords):
-    legend = Legend(leg)
-    legend.x = loc[0] + data.wid_shift
-    legend.y = loc[1] + data.hgt_shift
-    diagram.add(legend)
-
-
+legend = Legend(data.legend)
+legend.x = 32
+legend.y = 32 * 8
+diagram.add(legend)
 
 with open("diagram.svg", "w") as f:
     f.write(diagram.render())
-

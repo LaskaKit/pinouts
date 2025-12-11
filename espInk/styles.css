@@ -1,6 +1,6 @@
 :root {
   --varMoveSwatch: -0px; /*Change this value to move swatch, shouldn't be necessary, var(--varMoveSwatch)*/
-  --varMovePinLabelText: -7px; /*Change this value to move pin label text, var(--varMovePinLabelText)*/
+  --varMovePinLabelText: -20px; /*Change this value to move pin label text, var(--varMovePinLabelText)*/
 }
 
 text {

@@ -2,7 +2,7 @@
 from sndhdr import whathdr
 
 brdName = "ESPink" #add board name here
-brdImgName = "ESPink.png" #add name of board .png
+brdImgName = "/home/vik/PycharmProjects/pinouts/espInk/ESPink.png" #location of board .png
 
 
 D_WIDTH = 3180 #resulting diagram width
