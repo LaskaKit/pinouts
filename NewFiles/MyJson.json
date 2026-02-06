@@ -1,0 +1,276 @@
+{
+  "brdName": "ESPink",
+  "brdImgName": "./espInk/ESPink.png",
+  "D_WIDTH": 3180,
+  "D_HEIGHT": 1860,
+    "_comment7": "wid_shift = ((D_WIDTH-image.width) // 2) + 200, in this case (3180-619)//2-200 = 2670",
+  "wid_shift": 1480,
+  "hgt_shift": 128,
+  "title": "LaskaKit ESP32-LPKit",
+  "customCssFilepath": null,
+  "titleWidthShift": -430,
+  "titleHeightShift": 20,
+
+  "legend": [
+      {"label": "Analog", "tag": "analog"},
+      {"label": "Other", "tag": "other"},
+      {"label": "Ground", "tag": "gnd"},
+      {"label": "GPIO", "tag": "gpio"},
+      {"label": "Power", "tag": "pwr"},
+      {"label": "RTC", "tag": "rtc"},
+      {"label": "I2C", "tag": "i2c"},
+      {"label": "SPI", "tag": "spi"},
+      {"label": "UART", "tag": "uart"}
+    ],
+
+  "legendSPI": [
+      {"label": "CS - 46  ", "tag": "rtc"},
+      {"label": "MOSI - 3 ", "tag": "mosi"},
+      {"label": "SCK - 14 ", "tag": "scl"},
+      {"label": "MISO - 21", "tag": "sda"},
+      {"label": "3.3V - 47", "tag": "pwr"},
+      {"label": "GND", "tag": "gnd"}
+  ],
+
+  "legendI2C": [
+      {"label": "GND", "tag": "gnd"},
+      {"label": "3.3V - 47", "tag": "pwr"},
+      {"label": "SDA - 42", "tag": "sda"},
+      {"label": "SCL - 2 ", "tag": "scl"}
+  ],
+
+  "legendList": ["legendI2C", "legendSPI", "legend"],
+  "legendCoords": [{"x": -200, "y": 1060}, {"x": 850, "y": 520}, {"x": -1000, "y": 0}],
+
+
+  "_comment": ["Pinlabels. Each pin is an array of touples, with each touple being in the format of (TEXT, appearance)"],
+
+  "left_header": [
+      [
+          {"label": "3V3", "tag": "pwr"}
+      ],
+      [
+          {"label": "EN", "tag": "pwr"}
+      ],
+      [
+          {"label": "GP4", "tag": "gpio"},
+          {"label": "ADC1 CH3", "tag": "analog"},
+          {"label": "TOUCH 4", "tag": "other"},
+          {"label": "RTC_IO4", "tag": "rtc"}
+      ],
+      [
+          {"label": "GP5", "tag": "gpio"},
+          {"label": "ADC1 CH4", "tag": "analog"},
+          {"label": "TOUCH 5", "tag": "other"},
+          {"label": "RTC_IO5", "tag": "rtc"}
+      ],
+      [
+          {"label": "GP6", "tag": "gpio"},
+          {"label": "ADC1 CH5", "tag": "analog"},
+          {"label": "TOUCH 6", "tag": "other"},
+          {"label": "RTC_IO6", "tag": "rtc"}
+      ],
+      [
+          {"label": "GP7", "tag": "gpio"},
+          {"label": "ADC1 CH6", "tag": "analog"},
+          {"label": "TOUCH 7", "tag": "other"},
+          {"label": "RTC_IO7", "tag": "rtc"}
+      ],
+      [
+          {"label": "GP15", "tag": "gpio"},
+          {"label": "ADC2 CH4", "tag": "analog"},
+          {"label": "TOUCH 12", "tag": "other"},
+          {"label": "RTS_0", "tag": "spi"},
+          {"label": "RTC_IO15", "tag": "rtc"},
+          {"label": "RXD 1", "tag": "uart"}
+      ],
+      [
+          {"label": "GP16", "tag": "gpio"},
+          {"label": "ADC2 CH5", "tag": "analog"},
+          {"label": "CTS_0", "tag": "spi"},
+          {"label": "RTC_IO16", "tag": "rtc"},
+          {"label": "TXD 1", "tag": "uart"}
+      ],
+      [
+          {"label": "GP17", "tag": "gpio"},
+          {"label": "ADC2 CH6", "tag": "analog"},
+          {"label": "TXD 1", "tag": "spi"},
+          {"label": "RTC_IO17", "tag": "rtc"}
+      ],
+      [
+          {"label": "GP18", "tag": "gpio"},
+          {"label": "ADC2 CH7", "tag": "analog"},
+          {"label": "RXD 1", "tag": "spi"},
+          {"label": "RTC_IO18", "tag": "rtc"},
+          {"label": "CLK_OUT3", "tag": "other"}
+      ],
+      [
+          {"label": "GP8", "tag": "gpio"},
+          {"label": "ADC1 CH7", "tag": "analog"},
+          {"label": "TOUCH 8", "tag": "other"},
+          {"label": "RTC_IO8", "tag": "rtc"},
+          {"label": "SDA", "tag": "i2c"}
+      ],
+      [
+          {"label": "GP19", "tag": "gpio"},
+          {"label": "ADC2 CH8", "tag": "analog"},
+          {"label": "RXD 2", "tag": "uart"},
+          {"label": "RTS 1", "tag": "spi"},
+          {"label": "RTC_IO19", "tag": "rtc"},
+          {"label": "CLK_OUT2", "tag": "other"},
+          {"label": "USB D+", "tag": "other"}
+      ],
+      [
+          {"label": "GP20", "tag": "gpio"},
+          {"label": "ADC2 CH9", "tag": "analog"},
+          {"label": "TXD 2", "tag": "uart"},
+          {"label": "RTS 1", "tag": "spi"},
+          {"label": "RTC_IO19", "tag": "rtc"},
+          {"label": "CLK_OUT2", "tag": "other"},
+          {"label": "USB D-", "tag": "other"}
+      ],
+      [
+          {"label": "GP3", "tag": "gpio"},
+          {"label": "ADC1 CH2", "tag": "analog"},
+          {"label": "TOUCH 3", "tag": "other"},
+          {"label": "RTC_IO3", "tag": "rtc"},
+          {"label": "JTAG", "tag": "other"}
+      ],
+      [
+          {"label": "GND", "tag": "gnd"}
+      ],
+      [
+          {"label": "VCC", "tag": "pwr"}
+      ]
+  ],
+
+  "right_header": [
+      [
+          {"label": "GND", "tag": "gnd"}
+      ],
+      [
+          {"label": "GP1", "tag": "gpio"},
+          {"label": "ADC1 CH0", "tag": "analog"},
+          {"label": "TOUCH 1", "tag": "other"},
+          {"label": "RTC_IO1", "tag": "rtc"}
+      ],
+      [
+          {"label": "GP43", "tag": "gpio"},
+          {"label": "CLK OUT1", "tag": "other"},
+          {"label": "TXD 0", "tag": "uart"}
+      ],
+      [
+          {"label": "GP44", "tag": "gpio"},
+          {"label": "CLK OUT2", "tag": "other"},
+          {"label": "RXD 0", "tag": "uart"}
+      ],
+      [
+          {"label": "GP41", "tag": "gpio"},
+          {"label": "MTDI", "tag": "other"}
+      ],
+      [
+          {"label": "GP40", "tag": "gpio"},
+          {"label": "CLK OUT2", "tag": "other"},
+          {"label": "MTDO", "tag": "other"},
+          {"label": "Pushbutton", "tag": "other"}
+      ],
+      [
+          {"label": "GP39", "tag": "gpio"},
+          {"label": "CLK OUT3", "tag": "other"},
+          {"label": "MTDCK", "tag": "other"}
+      ],
+      [
+          {"label": "If PSRAM = OFF", "tag": "pwr"},
+          {"label": "GP35", "tag": "gpio"},
+          {"label": "FSPIPW", "tag": "other"}
+      ]
+  ],
+
+  "_comment2": ["content, x, y, tag, scale, body, leaderline"],
+  "hwCoordiantes": [
+      {"name": "3v3", "x": 50, "y": 143},
+      {"name": "gnd", "x": 560, "y": 145},
+      {"name": "pin_pitch_v", "x": 0, "y": 51},
+      {"name": "pin_pitch_h", "x": 50, "y": 0},
+      {"name": "usb_power", "x": 320, "y": 1435},
+      {"name": "usup", "x": 80, "y": 1140},
+      {"name": "bat", "x": 530, "y": 790},
+      {"name": "disp", "x": 570, "y": 1150},
+      {"name": "SPI", "x": 530, "y": 640}
+  ],
+
+   "_comment1": ["content, x, y, tag, scale, body, leaderline, #hwCoordiantes =[(\"3v3\", 10, 81), (\"3v3\", 10, 81), (\"gnd\", 221, 79), (\"pin_pitch_v\", 0, 23), (\"pin_pitch_h\", 30, 0), (\"usb_power\", 112, 610), (\"usup\", 0, 476), (\"bat\", 230, 485)]\n"],
+
+  "_comment4": ["Script has to search HW coordinates. PinLabels => PinLabelsData, and now contains a touple containing (hwCoordinates, search term, returned data index"],
+
+    "graphicPinLabelData": [
+        {
+            "pin": "USB-POWER",
+            "start_X": {"arr": "hwCoordiantes", "searchTerm": "usb_power", "index": 1},
+            "start_Y": {"arr": "hwCoordiantes", "searchTerm": "usb_power", "index":  2},
+            "tag": "pwr",
+            "scale": {"x": 1, "y": 1},
+            "body": {"x": 0, "y": 200, "width": 200, "height": 40},
+            "leaderline": {"direction": "vh"}
+        },
+        {
+            "pin": "μŠup i2c",
+            "start_X": {"arr": "hwCoordiantes", "searchTerm": "usup", "index": 1},
+            "start_Y": {"arr": "hwCoordiantes", "searchTerm": "usup", "index": 2},
+            "tag": "i2c",
+            "scale": {"x": -1,"y": 1},
+            "body": {"x": 100, "y": 0, "width": 200, "height": 40},
+            "leaderline": null
+        },
+        {
+            "pin": "Battery Connector",
+            "start_X": {"arr": "hwCoordiantes", "searchTerm": "bat", "index": 1},
+            "start_Y": {"arr": "hwCoordiantes", "searchTerm": "bat", "index": 2},
+            "tag": "pwr",
+            "scale": {"x": 1, "y": 1},
+            "body": {"x": 100, "y": 0, "width": 250, "height": 40},
+            "leaderline": null
+        },
+        {
+            "pin": "Display Connector",
+            "start_X": {"arr": "hwCoordiantes", "searchTerm": "disp", "index": 1},
+            "start_Y": {"arr": "hwCoordiantes", "searchTerm": "disp", "index": 2},
+            "tag": "other",
+            "scale": {"x": 1, "y": 1},
+            "body": {"x": 100, "y": 0, "width": 300, "height": 40},
+            "leaderline": null
+        },
+        {
+            "pin": "μŠup SPI",
+            "start_X": {"arr": "hwCoordiantes", "searchTerm": "SPI", "index": 1},
+            "start_Y": {"arr": "hwCoordiantes", "searchTerm": "SPI", "index": 2},
+            "tag": "spi", "scale": {"x": 1, "y": 1},
+            "body": {"x": 100, "y": 0, "width": 210, "height": 40},
+            "leaderline": null
+        }
+    ],
+
+  "_comment3": ["Script has to search HW coordinates. PinLabelGroups => PinLabelGroupsData, and now contains a touple containing (hwCoordinates, search term, returned data index"],
+
+  "graphicPinLabelGroupsData": [
+      {
+          "start": {"arr": "hwCoordiantes", "searchTerm": "gnd"},
+          "pinPitch": {"arr": "hwCoordiantes", "searchTerm": "pin_pitch_v"},
+          "label_start": {"x": 50, "y": 0},
+          "label_pitch": {"x": 0, "y": 50},
+          "scale": {"x": 1, "y": 1},
+          "name": "right_header",
+          "size": {"height": 38, "width": 200}
+      },
+      {
+          "start": {"arr": "hwCoordiantes", "searchTerm": "3v3"},
+          "pinPitch": {"arr": "hwCoordiantes", "searchTerm": "pin_pitch_v"},
+          "label_start": {"x": 50, "y": 0},
+          "label_pitch": {"x": 0, "y": 50},
+          "scale": {"x": -1, "y": 1},
+          "name": "left_header",
+          "size": {"height": 38, "width": 200}
+      }
+
+  ]
+}
