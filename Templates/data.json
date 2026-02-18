@@ -1,0 +1,118 @@
+{
+  "brdName": "",
+  "brdImgName": "",
+  "D_WIDTH": ,
+  "D_HEIGHT": ,
+    "_comment7": "",
+  "wid_shift": ,
+  "hgt_shift": ,
+  "title": "",
+  "customCssFilepath": ,
+  "titleWidthShift": ,
+  "titleHeightShift": ,
+
+  "legend": [
+      {"label": "Analog", "tag": "analog"},
+      {"label": "Other", "tag": "other"},
+      {"label": "Ground", "tag": "gnd"},
+      {"label": "GPIO", "tag": "gpio"},
+      {"label": "Power", "tag": "pwr"},
+      {"label": "RTC", "tag": "rtc"},
+      {"label": "I2C", "tag": "i2c"},
+      {"label": "SPI", "tag": "spi"},
+      {"label": "UART", "tag": "uart"}
+    ],
+
+  "legendSPI": [
+      {"label": "CS - 46  ", "tag": "rtc"},
+      {"label": "MOSI - 3 ", "tag": "mosi"},
+      {"label": "SCK - 14 ", "tag": "scl"},
+      {"label": "MISO - 21", "tag": "sda"},
+      {"label": "3.3V - 47", "tag": "pwr"},
+      {"label": "GND", "tag": "gnd"}
+  ],
+
+  "legendI2C": [
+      {"label": "GND", "tag": "gnd"},
+      {"label": "3.3V - 47", "tag": "pwr"},
+      {"label": "SDA - 42", "tag": "sda"},
+      {"label": "SCL - 2 ", "tag": "scl"}
+  ],
+
+  "legendList": ["legendI2C", "legendSPI", "legend"],
+  "legendCoords": [{"x": , "y": }, {"x": , "y": }, {"x": , "y": }],
+
+
+  "_comment": ["Pinlabels. Each pin is an array of touples, with each touple being in the format of (TEXT, appearance)"],
+
+  "left_header": [
+      [
+
+      ],
+      [
+
+      ],
+      [
+
+      ]
+  ],
+
+  "right_header": [
+      [
+
+      ],
+      [
+
+      ],
+      [
+
+      ]
+  ],
+
+  "_comment2": ["content, x, y, tag, scale, body, leaderline"],
+  "hwCoordiantes": [
+      {"name": "gnd", "x": 560, "y": 145},
+      {"name": "pin_pitch", "x": 0, "y": 51},
+      {"name": "", "x": , "y": }
+  ],
+
+   "_comment1": ["content, x, y, tag, scale, body, leaderline, #hwCoordiantes =[(\"3v3\", 10, 81), (\"3v3\", 10, 81), (\"gnd\", 221, 79), (\"pin_pitch_v\", 0, 23), (\"pin_pitch_h\", 30, 0), (\"usb_power\", 112, 610), (\"usup\", 0, 476), (\"bat\", 230, 485)]\n"],
+
+  "_comment4": ["Script has to search HW coordinates. PinLabels => PinLabelsData, and now contains a touple containing (hwCoordinates, search term, returned data index"],
+
+    "graphicPinLabelData": [
+        {
+            "pin": "",
+            "start_X": {"arr": "", "searchTerm": "", "index": },
+            "start_Y": {"arr": "", "searchTerm": "", "index": },
+            "tag": "",
+            "scale": {"x": ,"y": },
+            "body": {"x": , "y": , "width": , "height": },
+            "leaderline":
+        },
+        {
+            "pin": "",
+            "start_X": {"arr": "", "searchTerm": "", "index": },
+            "start_Y": {"arr": "", "searchTerm": "", "index": },
+            "tag": "",
+            "scale": {"x": ,"y": },
+            "body": {"x": , "y": , "width": , "height": },
+            "leaderline":
+        }
+    ],
+
+  "_comment3": ["Script has to search HW coordinates. PinLabelGroups => PinLabelGroupsData, and now contains a touple containing (hwCoordinates, search term, returned data index"],
+
+  "graphicPinLabelGroupsData": [
+      {
+          "start": {"arr": "", "searchTerm": ""},
+          "pinPitch": {"arr": "", "searchTerm": "pin_pitch"},
+          "label_start": {"x": , "y": },
+          "label_pitch": {"x": , "y": },
+          "scale": {"x": 1, "y": 1},
+          "name": "",
+          "size": {"height": , "width": }
+      }
+
+  ]
+}
