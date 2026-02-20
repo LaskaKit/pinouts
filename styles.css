@@ -1,7 +1,7 @@
 text {
     font-family: Verdana, Georgia, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .pinlabel__leader{
@@ -17,6 +17,10 @@ text {
     text-anchor: middle;
 }
 
+.pinlabel__body{
+
+}
+
 
 .i2c .pinlabel__body{
     fill: rgb(0, 100, 173);
@@ -26,6 +30,9 @@ text {
 }
 .i2c .swatch__body {
     fill: rgb(0, 100, 173);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
+    scale: (2, 2);
 }
 
 .pwr .pinlabel__body{
@@ -36,6 +43,8 @@ text {
 }
 .pwr .swatch__body {
     fill: rgb(173, 0, 0);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
 }
 .uart .pinlabel__body{
     fill: rgb(182, 69, 176);
@@ -45,6 +54,8 @@ text {
 }
 .uart .swatch__body {
     fill: rgb(182, 69, 176);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
 }
 .gpio .pinlabel__body{
     fill: rgb(160, 133, 26);
@@ -54,6 +65,8 @@ text {
 }
 .gpio .swatch__body {
     fill: rgb(160, 133, 26);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
 }
 .analog .pinlabel__body{
     fill: rgb(32, 150, 165);
@@ -63,6 +76,8 @@ text {
 }
 .analog .swatch__body {
     fill: rgb(32, 150, 165);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
 }
 .gnd .pinlabel__body{
     fill: rgb(0, 0, 0);
@@ -72,6 +87,8 @@ text {
 }
 .gnd .swatch__body {
     fill: rgb(0, 0, 0);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
 }
 .spi .pinlabel__body{
     fill: rgb(151, 76, 23);
@@ -81,6 +98,8 @@ text {
 }
 .spi .swatch__body {
     fill: rgb(151, 76, 23);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
 }
 .touch .pinlabel__body{
     fill: rgb(230, 87, 10);
@@ -100,6 +119,8 @@ text {
 }
 .rtc .swatch__body {
     fill: rgb(100, 200, 10);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
 }
 
 .other .pinlabel__body{
@@ -110,6 +131,8 @@ text {
 }
 .other .swatch__body {
     fill: rgb(200, 200, 200);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
 }
 
 .panel__inner {
@@ -124,7 +147,7 @@ text {
 }
 
 .title {
-    font-size: 32px;
+    font-size: 64px;
     /* font-style: italic; */
 }
 
@@ -137,4 +160,26 @@ text {
 
 .panel--info .panel__inner{
     fill: #f4f4f4;
+}
+
+
+.scl .swatch__body {
+    fill: rgb(255, 255, 0);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
+    transform: translate(var(--varMoveSwatch),0px);
+}
+
+.sda .swatch__body {
+    fill: rgb(0, 0, 255);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
+    transform: translate(var(--varMoveSwatch),0px);
+}
+
+.mosi .swatch__body {
+    fill: rgb(255, 255, 255);
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
+    transform: translate(var(--varMoveSwatch),0px);
 }
