@@ -67,10 +67,8 @@ It‘s important to note that the legend entries are an array of dictionaries, w
 ### Headers
 Headers are sets of exposed pins, typically exposed with dupont pin–compatible holes or as pads (such as on the ESPLan board). 
 Each header is defined by an array of arrays of dictionaries, where:
-
-    - Each array is one pin
-	
-    - Each dictionary is one of the labels (the colorful rectangles with text) that is to be placed next to that pin. That dictionary contains 2 strings: A “label“ and a “tag“. The label being the text that is to be displayed within the rectangle, and the tag determining the rectangle‘s color.
+- Each array is one pin
+- Each dictionary is one of the labels (the colorful rectangles with text) that is to be placed next to that pin. That dictionary contains 2 strings: A “label“ and a “tag“. The label being the text that is to be displayed within the rectangle, and the tag determining the rectangle‘s color.
     
 ```
 "left_header": – Header definition
@@ -99,9 +97,9 @@ Each header is defined by an array of arrays of dictionaries, where:
 
 ### HW Coordinates
 The “hwCoordinates“ array conains the coordinates for any and all important pins, namely:
-    - Pins that define the start of Pin Label Groups (typically the first pins on each pin header)
-    - USB, uŠup, and other connectors
-    - pin_pitch, which describes the pitch between pins on headers
+- Pins that define the start of Pin Label Groups (typically the first pins on each pin header)
+- USB, uŠup, and other connectors
+- pin_pitch, which describes the pitch between pins on headers
 The pin coordinates are taken from the BASE IMAGE.
     
 ```
