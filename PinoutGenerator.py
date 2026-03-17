@@ -140,7 +140,7 @@ for record in data["graphicPinLabelData"]: # Parse the data and add it to the ar
 
     ## GRAB DATA FROM THE RECORD
     pin = record["pin"]
-    scale = (record["scale"]["x"], record["scale"]["x"])
+    scale = (record["scale"]["x"], record["scale"]["y"])
     tag = record["tag"]
     body = record["body"]
     leaderline = record["leaderline"]
